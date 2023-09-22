@@ -1,0 +1,16 @@
+.product-image {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 2px;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  color: black;
+  border-radius: 50px;
+}
+
+.swiper-pagination-bullet {
+  background-color: black;
+}

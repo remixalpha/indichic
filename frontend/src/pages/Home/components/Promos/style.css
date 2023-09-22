@@ -1,0 +1,13 @@
+@keyframes scroll {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-images-scroll {
+  animation: scroll 20s linear infinite; /* Adjust duration as needed */
+}

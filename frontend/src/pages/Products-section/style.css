@@ -1,0 +1,12 @@
+@keyframes moveUp {
+  from {
+    transform: translateY(18%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-images-move-up {
+  animation: moveUp 2s ease-out forwards;
+}
