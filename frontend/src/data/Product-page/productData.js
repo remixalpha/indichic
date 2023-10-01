@@ -42,15 +42,16 @@ const productData = {
         {
           id: "shirt",
           productName: "Shirt",
-          des: "hi",
+          des: "50 -70 ",
           imageSrc: shirt3,
           products: [
             {
               id: 1,
               name: "Summer Shirt",
               des: "Style Cotton and Linen ",
-              price: "300",
-              href: "#",
+              color: "Salmon",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               imageSrc: shirt3,
               imageAlt: "Product",
             },
@@ -59,15 +60,16 @@ const productData = {
         {
           id: "tshirt",
           productName: "TShirt",
-          des: "hi",
+          des: "40",
           imageSrc: shirt1,
           products: [
             {
               id: 1,
               name: "Explore Trendy ",
               des: " Explore Trendy Men's T-Shirts",
-              price: "320",
-              href: "#",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
+              color: "Salmon",
               imageSrc: shirt1,
               // hoverImages: [shirt1, shirt5],
               imageAlt: "Product",
@@ -76,7 +78,8 @@ const productData = {
               id: 2,
               name: " Trendy Tshirt ",
               des: " Explore Trendy Men's T-Shirts",
-              price: "320",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: shirt5,
               // hoverImages: [shirt1, shirt5],
@@ -86,7 +89,8 @@ const productData = {
               id: 3,
               name: "Green Tshirt",
               des: "Green Tshirt Cotton ",
-              price: "320",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: shirt2,
               imageAlt: "Product",
@@ -95,7 +99,8 @@ const productData = {
               id: 4,
               name: "Summer Shirt",
               des: "Style Cotton and Linen ",
-              price: "300",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: shirt3,
               imageAlt: "Product",
@@ -105,14 +110,15 @@ const productData = {
         {
           id: "pants",
           productName: "Pants",
-          des: "hi",
+          des: "60",
           imageSrc: Chinese1,
           products: [
             {
               id: 1,
               name: "Chinese Style Pants",
               des: "Chinese Style Cotton and Linen ",
-              price: "320",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: Chinese1,
               hoverImages: [Chinese1, Chinese2],
@@ -122,7 +128,8 @@ const productData = {
               id: 2,
               name: "Cargo Pants",
               des: "Men Flap Pocket Drawstring ",
-              price: "410",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: Pants2,
               imageAlt: "Product",
@@ -131,7 +138,8 @@ const productData = {
               id: 3,
               name: "Style Pants",
               des: "Style Cotton and Linen ",
-              price: "300",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: Pants3,
               imageAlt: "Product",
@@ -141,14 +149,15 @@ const productData = {
         {
           id: "jacket",
           productName: "Jacket",
-          des: "hi",
+          des: "40 - 80",
           imageSrc: jacket,
           products: [
             {
               id: 1,
               name: "Jacket",
               des: "A leather finished jacket",
-              price: "399",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: jacket,
               imageAlt: "product",
@@ -158,14 +167,15 @@ const productData = {
         {
           id: "short",
           productName: "Short",
-          des: "hi",
+          des: "80",
           imageSrc: short1,
           products: [
             {
               id: 1,
               name: "Drawstring  Shorts",
               des: "Men Flap Pocket Drawstring  ",
-              price: "410",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: short1,
               imageAlt: "Product",
@@ -174,7 +184,8 @@ const productData = {
               id: 2,
               name: "Pocket Side Shorts",
               des: "Men Flap Pocket Side Shorts ",
-              price: "300",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: short2,
               imageAlt: "Product",
@@ -184,14 +195,15 @@ const productData = {
         {
           id: "cardigan",
           productName: "Cardigan",
-          des: "hi",
+          des: "30 - 60",
           imageSrc: Cardigan1,
           products: [
             {
               id: 1,
               name: "Cardigan",
               des: "Latest Autumn  Crochet Color ",
-              price: "600",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: Cardigan1,
               hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -202,14 +214,15 @@ const productData = {
         {
           id: "shirt",
           productName: "Shirt",
-          des: "hi",
+          des: "40",
           imageSrc: shirtW1,
           products: [
             {
               id: 1,
               name: "Fall Shirts ",
               des: "The Overwhelmed Mommy Blog",
-              price: "365",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: shirtW1,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -219,7 +232,8 @@ const productData = {
               id: 2,
               name: " Straped CropTop",
               des: "The Overwhelmed Mommy Blog",
-              price: "302",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: shirtW2,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -229,7 +243,8 @@ const productData = {
               id: 3,
               name: " Straped CropTop",
               des: "The Overwhelmed Mommy Blog",
-              price: "302",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: shirtW3,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -240,14 +255,15 @@ const productData = {
         {
           id: "pants",
           productName: "Pants",
-          des: "hi",
+          des: "60",
           imageSrc: pants1,
           products: [
             {
               id: 1,
               name: "Fall Shirts ",
               des: "The Overwhelmed Mommy Blog",
-              price: "365",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: pants1,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -257,7 +273,8 @@ const productData = {
               id: 2,
               name: "Fall Shirts ",
               des: "The Overwhelmed Mommy Blog",
-              price: "365",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: pants2,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -267,7 +284,8 @@ const productData = {
               id: 3,
               name: "JumpSuits",
               des: "The Overwhelmed Mommy Blog",
-              price: "365",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: pants3,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -278,14 +296,15 @@ const productData = {
         {
           id: "sweater",
           productName: "Sweater",
-          des: "hi",
+          des: "80",
           imageSrc: sweaters1,
           products: [
             {
               id: 1,
               name: "Sweaters",
               des: "The Overwhelmed Mommy Blog",
-              price: "299",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: sweaters1,
               hoverImages: [
@@ -301,7 +320,8 @@ const productData = {
               id: 2,
               name: "Long Sweater brown",
               des: "The Overwhelmed Mommy Blog",
-              price: "299",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: sweaters6,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -318,14 +338,15 @@ const productData = {
         {
           id: "shirt",
           productName: "Shirt",
-          des: "hi",
+          des: "50 - 70",
           imageSrc: shirt3,
           products: [
             {
               id: 1,
               name: "Summer Shirt",
               des: "Style Cotton and Linen ",
-              price: "300",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "300", // Add discountedPrice field
               href: "#",
               imageSrc: shirt3,
               imageAlt: "Product",
@@ -335,14 +356,15 @@ const productData = {
         {
           id: "tshirt",
           productName: "TShirt",
-          des: "hi",
+          des: "40",
           imageSrc: shirt1,
           products: [
             {
               id: 1,
               name: "Explore Trendy ",
               des: " Explore Trendy Men's T-Shirts",
-              price: "320",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "320", // Add discountedPrice field
               href: "#",
               imageSrc: shirt1,
               // hoverImages: [shirt1, shirt5],
@@ -352,7 +374,8 @@ const productData = {
               id: 2,
               name: " Trendy Tshirt ",
               des: " Explore Trendy Men's T-Shirts",
-              price: "320",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "320", // Add discountedPrice field
               href: "#",
               imageSrc: shirt5,
               // hoverImages: [shirt1, shirt5],
@@ -362,7 +385,8 @@ const productData = {
               id: 3,
               name: "Green Tshirt",
               des: "Green Tshirt Cotton ",
-              price: "320",
+              originalPrice: "410", // Add originalPrice field
+              discountedPrice: "300", // Add discountedPrice field
               href: "#",
               imageSrc: shirt2,
               imageAlt: "Product",
@@ -371,7 +395,8 @@ const productData = {
               id: 4,
               name: "Summer Shirt",
               des: "Style Cotton and Linen ",
-              price: "300",
+              originalPrice: "410", // Add originalPrice field
+              discountedPrice: "300", // Add discountedPrice field
               href: "#",
               imageSrc: shirt3,
               imageAlt: "Product",
@@ -381,14 +406,15 @@ const productData = {
         {
           id: "pants",
           productName: "Pants",
-          des: "hi",
+          des: "60",
           imageSrc: Chinese1,
           products: [
             {
               id: 1,
               name: "Chinese Style Pants",
-              des: "Chinese Style Cotton and Linen ",
-              price: "320",
+              des: "Chinese Style Cotton and Linen",
+              originalPrice: "400", // Add originalPrice field
+              discountedPrice: "320", // Add discountedPrice field
               href: "#",
               imageSrc: Chinese1,
               hoverImages: [Chinese1, Chinese2],
@@ -397,8 +423,9 @@ const productData = {
             {
               id: 2,
               name: "Cargo Pants",
-              des: "Men Flap Pocket Drawstring ",
-              price: "410",
+              des: "Men Flap Pocket Drawstring",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: Pants2,
               imageAlt: "Product",
@@ -406,25 +433,28 @@ const productData = {
             {
               id: 3,
               name: "Style Pants",
-              des: "Style Cotton and Linen ",
-              price: "300",
+              des: "Style Cotton and Linen",
+              originalPrice: "350", // Add originalPrice field
+              discountedPrice: "300", // Add discountedPrice field
               href: "#",
               imageSrc: Pants3,
               imageAlt: "Product",
             },
           ],
         },
+
         {
           id: "jacket",
           productName: "Jacket",
-          des: "hi",
+          des: "40 - 80",
           imageSrc: jacket,
           products: [
             {
               id: 1,
               name: "Jacket",
               des: "A leather finished jacket",
-              price: "399",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "399", // Add discountedPrice field
               href: "#",
               imageSrc: jacket,
               imageAlt: "product",
@@ -434,14 +464,15 @@ const productData = {
         {
           id: "short",
           productName: "Short",
-          des: "hi",
+          des: "80",
           imageSrc: short1,
           products: [
             {
               id: 1,
               name: "Drawstring  Shorts",
               des: "Men Flap Pocket Drawstring  ",
-              price: "410",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: short1,
               imageAlt: "Product",
@@ -450,7 +481,8 @@ const productData = {
               id: 2,
               name: "Pocket Side Shorts",
               des: "Men Flap Pocket Side Shorts ",
-              price: "300",
+              originalPrice: "600", // Add originalPrice field
+              discountedPrice: "310", // Add discountedPrice field
               href: "#",
               imageSrc: short2,
               imageAlt: "Product",
@@ -466,14 +498,15 @@ const productData = {
         {
           id: "cardigan",
           productName: "Cardigan",
-          des: "hi",
+          des: "30 - 60",
           imageSrc: Cardigan1,
           products: [
             {
               id: 1,
               name: "Cardigan",
               des: "Latest Autumn  Crochet Color ",
-              price: "600",
+              originalPrice: "600", // Add originalPrice field
+              discountedPrice: "210", // Add discountedPrice field
               href: "#",
               imageSrc: Cardigan1,
               hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -484,14 +517,15 @@ const productData = {
         {
           id: "shirt",
           productName: "Shirt",
-          des: "hi",
+          des: "40",
           imageSrc: shirtW1,
           products: [
             {
               id: 1,
               name: "Fall Shirts ",
               des: "The Overwhelmed Mommy Blog",
-              price: "365",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "390", // Add discountedPrice field
               href: "#",
               imageSrc: shirtW1,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -501,7 +535,8 @@ const productData = {
               id: 2,
               name: " Straped CropTop",
               des: "The Overwhelmed Mommy Blog",
-              price: "302",
+              originalPrice: "800", // Add originalPrice field
+              discountedPrice: "300", // Add discountedPrice field
               href: "#",
               imageSrc: shirtW2,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -511,7 +546,8 @@ const productData = {
               id: 3,
               name: " Straped CropTop",
               des: "The Overwhelmed Mommy Blog",
-              price: "302",
+              originalPrice: "700", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: shirtW3,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -522,14 +558,15 @@ const productData = {
         {
           id: "pants",
           productName: "Pants",
-          des: "hi",
+          des: "60",
           imageSrc: pants1,
           products: [
             {
               id: 1,
               name: "Fall Shirts ",
               des: "The Overwhelmed Mommy Blog",
-              price: "365",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: pants1,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -539,7 +576,8 @@ const productData = {
               id: 2,
               name: "Fall Shirts ",
               des: "The Overwhelmed Mommy Blog",
-              price: "365",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: pants2,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -549,7 +587,8 @@ const productData = {
               id: 3,
               name: "JumpSuits",
               des: "The Overwhelmed Mommy Blog",
-              price: "365",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: pants3,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],
@@ -560,14 +599,15 @@ const productData = {
         {
           id: "sweater",
           productName: "Sweater",
-          des: "hi",
+          des: "80",
           imageSrc: sweaters1,
           products: [
             {
               id: 1,
               name: "Sweaters",
               des: "The Overwhelmed Mommy Blog",
-              price: "299",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: sweaters1,
               hoverImages: [
@@ -583,7 +623,8 @@ const productData = {
               id: 2,
               name: "Long Sweater brown",
               des: "The Overwhelmed Mommy Blog",
-              price: "299",
+              originalPrice: "500", // Add originalPrice field
+              discountedPrice: "410", // Add discountedPrice field
               href: "#",
               imageSrc: sweaters6,
               // hoverImages: [Cardigan1, Cardigan2, Cardigan3],

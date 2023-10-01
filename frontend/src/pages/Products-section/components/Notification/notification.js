@@ -47,6 +47,7 @@ export default function Notification() {
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-[60rem]  ">
                   <div
                     className={`xl:flex xl:flex-col h-full sm:grid sm:grid-cols-2 overflow-y-scroll bg-${backgroundColor} bg-opacity-80  shadow-xl  rounded-[2rem]  `}
+                    style={{ backdropFilter: "blur(10px)" }}
                   >
                     <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
                       <div className="flex items-start justify-between">

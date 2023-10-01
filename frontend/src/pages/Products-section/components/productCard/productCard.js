@@ -128,13 +128,32 @@ export default function ProductCard({ product }) {
             {product.des}
           </a>
         </div>
-        <div className=" z-10 relative -top-20 -right-[15rem] h-[6rem] w-[6rem] overflow-hidden rounded-[84px] bg-gray-500 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:scale-105 group-hover:shadow-lg transition-all duration-300  flex justify-center items-center">
-          <h1
-            className={`flex  flex-col text-2xl font-bold  tracking-tight  text-white`}
-          >
-            <p>Rs</p>
-            {product.price}
-          </h1>
+        <div className="z-10 relative -top-20 -right-[15rem] h-[6rem] w-[6rem]  overflow-hidden rounded-full bg-gray-500 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:scale-105 group-hover:shadow-lg transition-all duration-300 flex justify-center items-center">
+          <div className="flex flex-col items-center justify-center text-white  ">
+            <div className="text-2xl font-bold tracking-tight">
+              {/* Original Price */}
+              <div className="text-gray-900 text-sm line-through">
+                Rs {product.originalPrice}
+              </div>
+
+              {/* Discounted Price */}
+              <div>
+                <span className="text-sm">Rs. </span>
+                {product.discountedPrice}
+              </div>
+            </div>
+
+            {/* Discount Percentage */}
+            <div className="text-sm text-black">
+              Save
+              {(
+                ((product.originalPrice - product.discountedPrice) /
+                  product.originalPrice) *
+                100
+              ).toFixed(0)}
+              %
+            </div>
+          </div>
         </div>
       </div>
     </>

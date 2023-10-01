@@ -150,7 +150,7 @@ export const theme = {
   colors: () => ({
     white: "#ffff",
     lightPrimary: "#F4F7FE",
-    black: "#111",
+    black: "#000000",
 
     gray: {
       50: "#f8f9fa",

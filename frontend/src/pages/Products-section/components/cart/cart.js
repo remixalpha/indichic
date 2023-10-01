@@ -10,6 +10,9 @@ import cartProductsData from "../../../../data/Cart-products/cartProducts";
 export default function Cart() {
   const [open, setOpen] = useState(true);
 
+  // For the price set with the qty value
+  const [selectedQty, setSelectedQty] = useState(1);
+
   const { theme } = useTheme();
   const backgroundColor = theme === "dark" ? "white" : "black";
   const textColor = theme === "dark" ? "black" : "white";
@@ -17,6 +20,24 @@ export default function Cart() {
   const btnColor = theme === "dark" ? "black" : "white";
   const btnTextColor = theme === "dark" ? "white" : "black";
 
+  // For the price withe the value selected in qty
+  // Calculate the total price based on the selected quantity
+  const calculateTotalPrice = () => {
+    let totalPrice = 0;
+
+    cartProductsData.products.forEach((product) => {
+      const productPrice = selectedQty * parseFloat(product.discountedPrice); // Multiply by selectedQty and use discountedPrice
+      totalPrice = productPrice;
+    });
+
+    return totalPrice.toFixed(2);
+  };
+
+  // Function to handle quantity selection change
+  const handleQtyChange = (event) => {
+    const newQty = parseInt(event.target.value);
+    setSelectedQty(newQty);
+  };
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -47,6 +68,7 @@ export default function Cart() {
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-[60rem]  ">
                   <div
                     className={`xl:flex xl:flex-col h-full sm:grid sm:grid-cols-2 overflow-y-scroll bg-${backgroundColor} bg-opacity-80  shadow-xl  rounded-[2rem]  `}
+                    style={{ backdropFilter: "blur(10px)" }}
                   >
                     <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
                       <div className="flex items-start justify-between">
@@ -131,19 +153,23 @@ export default function Cart() {
                                             name="qty"
                                             autoComplete="qty-no"
                                             className="block w-full rounded-md border-0 py-1.5 bg-white text-black shadow-sm ring-1 ring-inset ring-gray-300 sm:max-w-xs sm:text-sm sm:leading-6"
+                                            onChange={handleQtyChange}
+                                            value={selectedQty}
                                           >
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
+                                            <option value={1}>1</option>
+                                            <option value={2}>2</option>
+                                            <option value={3}>3</option>
+                                            <option value={4}>4</option>
+                                            <option value={5}>5</option>
+                                            <option value={6}>6</option>
+                                            <option value={7}>7</option>
                                           </select>
                                         </div>
                                       </div>
                                     </div>
-                                    <p className="ml-4">{product.price}</p>
+                                    <p className="ml-4">
+                                      ${calculateTotalPrice()}
+                                    </p>
                                   </div>
                                 </div>
                               </li>
@@ -158,7 +184,7 @@ export default function Cart() {
                         className={`flex justify-between text-base font-medium text-${textColor} p-4 `}
                       >
                         <p>Total</p>
-                        <p>$262.00</p>
+                        <p>${calculateTotalPrice()}</p>
                       </div>
 
                       <div className="mt-6 group ">
