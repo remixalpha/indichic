@@ -2,7 +2,14 @@
 
 IndiChic is an exciting fashion brand website created using the MERN (MongoDB, Express.js, React, Node.js) stack. Explore this repository to get insights into the development of this stylish online platform.
 
-[![IndiChic Logo](https://www.indichic.com/logo.png)](https://www.indichic.com)
+
+
+![thumbnail1](https://github.com/remixalpha/indichic/assets/98940581/da9f321f-5f7b-4271-8ef1-97bfdbf3ce92)
+
+
+![thumbnail2](https://github.com/remixalpha/indichic/assets/98940581/85c4547c-f9e1-4f96-98cf-c5dfacf17cf6)
+
+
 
 ## Table of Contents
 
