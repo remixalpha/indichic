@@ -56,15 +56,19 @@ Follow these steps to set up and run IndiChic on your local machine:
    ```bash
    git clone https://github.com/yourusername/IndiChic.git
 
+   ```bash
 cd IndiChic/frontend
 npm install
 
+   ```bash
 cd ../backend
 npm install
 
+   ```bash
 cd frontend
 npm start
 
+   ```bash
 cd ../backend
 npm start
 
